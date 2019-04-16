@@ -9,7 +9,8 @@ connection = pymysql.connect(host='localhost',
                             
 try:
     with connection.cursor() as cursor:
-        cursor.execute("UPDATE Friends SET age = 22 where name = 'Bob';")
+        cursor.execute("UPDATE Friends SET age = %s where name = %s;",
+        (23, 'Bob'))
         connection.commit()
 finally:
     # Close the connection, regardless of whether or not the above was successful
