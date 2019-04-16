@@ -1,0 +1,11 @@
+mysql> desc album;
++----------+--------------+------+-----+---------+----------------+
+| Field    | Type         | Null | Key | Default | Extra          |
++----------+--------------+------+-----+---------+----------------+
+| AlbumId  | int(11)      | NO   | PRI | NULL    | auto_increment |
+| Title    | varchar(160) | NO   |     | NULL    |                |
+| ArtistId | int(11)      | NO   | MUL | NULL    |                |
++----------+--------------+------+-----+---------+----------------+
+3 rows in set (0.01 sec)
+
+mysql> notee
